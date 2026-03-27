@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('succulent')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const themes = [
+  { label: 'すべて', key: 'all' },
+  { label: '育て方', key: 'care' },
+  { label: '増やし方', key: 'propagation' },
+  { label: '種類・図鑑', key: 'species' },
+];
+
+function getThemes(tags: string[]): string[] {
+  const joined = tags.join(' ');
+  const r: string[] = [];
+  if (/育て方|水やり|肥料|植え替え|管理/.test(joined)) r.push('care');
+  if (/増やし|葉挿し|挿し木|株分け/.test(joined)) r.push('propagation');
+  if (/種類|図鑑|品種|おすすめ/.test(joined)) r.push('species');
+  return r;
+}
+---
+
+<BaseLayout title="多肉植物の記事一覧" description="多肉植物の種類・増やし方・季節管理に関する記事をまとめています。">
+  <div class="max-w-4xl mx-auto px-4 py-10">
+    <div class="flex items-center gap-3 mb-6">
+      <span class="text-4xl">🪴</span>
+      <div>
+        <h1 class="text-2xl font-bold text-gray-900">多肉植物の記事一覧</h1>
+        <p class="text-sm text-gray-500 mt-0.5">全{posts.length}件</p>
+      </div>
+    </div>
+
+    <div class="mb-8 flex flex-wrap gap-2" id="theme-filter">
+      {themes.map((theme, i) => (
+        <button class={`theme-btn px-4 py-2 rounded-full text-sm font-medium border transition-colors ${i === 0 ? 'active border-emerald-600 bg-emerald-600 text-white' : 'border-gray-300 text-gray-600 hover:border-emerald-400 hover:text-emerald-700'}`} data-theme={theme.key}>{theme.label}</button>
+      ))}
+    </div>
+
+    {posts.length === 0 ? (
+      <p class="text-gray-500 text-center py-20">記事はまだありません。</p>
+    ) : (
+      <div class="grid md:grid-cols-2 gap-4">
+        {posts.map((post) => (
+          <ArticleCard title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} href={`/succulent/${post.id}/`} data-themes={getThemes(post.data.tags).join(',')} />
+        ))}
+      </div>
+    )}
+    <p id="no-results" class="text-gray-500 text-center py-10 hidden">該当する記事がありません。</p>
+  </div>
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.theme-btn');
+  const cards = document.querySelectorAll<HTMLElement>('.article-card');
+  const noResults = document.getElementById('no-results');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const theme = btn.dataset.theme;
+      buttons.forEach((b) => { b.classList.remove('active','bg-emerald-600','text-white','border-emerald-600'); b.classList.add('border-gray-300','text-gray-600'); });
+      btn.classList.add('active','bg-emerald-600','text-white','border-emerald-600'); btn.classList.remove('border-gray-300','text-gray-600');
+      let v = 0;
+      cards.forEach((c) => { const t = (c.dataset.themes||'').split(','); const s = theme==='all'||t.includes(theme!); c.style.display = s?'':'none'; if(s) v++; });
+      if (noResults) noResults.classList.toggle('hidden', v > 0);
+    });
+  });
+</script>

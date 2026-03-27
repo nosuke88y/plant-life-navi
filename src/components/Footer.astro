@@ -1,0 +1,25 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-gray-800 text-gray-300 mt-16">
+  <div class="max-w-4xl mx-auto px-4 py-10">
+    <div class="flex flex-col md:flex-row justify-between gap-6">
+      <div>
+        <p class="text-white font-bold text-lg mb-1">🌿 Plant Life Navi</p>
+        <p class="text-sm text-gray-400">植物とともに、豊かな暮らしを。</p>
+      </div>
+      <nav class="flex flex-col gap-2 text-sm">
+        <a href="/houseplant/" class="hover:text-white transition-colors">🌿 観葉植物</a>
+        <a href="/succulent/" class="hover:text-white transition-colors">🪴 多肉植物</a>
+        <a href="/gardening/" class="hover:text-white transition-colors">🌻 ガーデニング</a>
+        <a href="/profile/" class="hover:text-white transition-colors">プロフィール</a>
+        <a href="/disclaimer/" class="hover:text-white transition-colors">免責事項</a>
+      </nav>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-6 text-xs text-gray-500 text-center space-y-1">
+      <p>当サイトはアフィリエイト広告を掲載しています。</p>
+      <p>&copy; {year} Plant Life Navi. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

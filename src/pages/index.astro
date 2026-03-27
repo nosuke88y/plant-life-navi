@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const houseplantPosts = await getCollection('houseplant');
+const succulentPosts = await getCollection('succulent');
+const gardeningPosts = await getCollection('gardening');
+
+const categoryMap = new Map<string, string>();
+houseplantPosts.forEach(p => categoryMap.set(p.id, 'houseplant'));
+succulentPosts.forEach(p => categoryMap.set(p.id, 'succulent'));
+gardeningPosts.forEach(p => categoryMap.set(p.id, 'gardening'));
+
+const allPosts = [...houseplantPosts, ...succulentPosts, ...gardeningPosts].sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+
+const recommendedPosts = allPosts.slice(0, 6);
+
+const categories = [
+  {
+    href: '/houseplant/',
+    emoji: '🌿',
+    label: '観葉植物',
+    count: houseplantPosts.length,
+    description: '育て方・置き場所・水やりのコツ',
+    gradient: 'from-[#2E7D32] to-[#43A047]',
+  },
+  {
+    href: '/succulent/',
+    emoji: '🪴',
+    label: '多肉植物',
+    count: succulentPosts.length,
+    description: '種類・増やし方・季節管理',
+    gradient: 'from-[#388E3C] to-[#66BB6A]',
+  },
+  {
+    href: '/gardening/',
+    emoji: '🌻',
+    label: 'ガーデニング',
+    count: gardeningPosts.length,
+    description: '花壇・プランター・土づくり',
+    gradient: 'from-[#00897B] to-[#26A69A]',
+  },
+];
+---
+
+<BaseLayout title="Plant Life Navi">
+  <section class="bg-gradient-to-br from-emerald-600 to-teal-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 py-16 text-center">
+      <p class="text-emerald-200 text-sm font-medium mb-3 tracking-widest uppercase">植物情報メディア</p>
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+        植物とともに、<br class="hidden md:block">豊かな暮らしを。
+      </h1>
+      <p class="text-emerald-100 text-base max-w-xl mx-auto">
+        観葉植物・多肉植物・ガーデニングに関する信頼できる情報を、わかりやすく解説します。
+      </p>
+    </div>
+  </section>
+
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <section class="mb-14">
+      <h2 class="text-lg font-bold text-gray-700 mb-5">カテゴリから探す</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {categories.map((cat) => (
+          <a
+            href={cat.href}
+            class={`group rounded-2xl bg-gradient-to-br ${cat.gradient} p-6 md:p-8 text-white shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all duration-300`}
+          >
+            <div>
+              <span class="text-4xl block mb-3">{cat.emoji}</span>
+              <p class="text-xl font-bold mb-1">{cat.label}</p>
+              <p class="text-sm text-white/80 mb-3">{cat.description}</p>
+              <div class="flex items-center gap-2">
+                <span class="text-sm font-medium bg-white/20 px-3 py-1 rounded-full">{cat.count}件の記事</span>
+                <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">→ 見てみる</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-bold text-gray-700 mb-5">おすすめ記事</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        {recommendedPosts.map((post) => {
+          const category = categoryMap.get(post.id) ?? 'houseplant';
+          return (
+            <ArticleCard
+              title={post.data.title}
+              description={post.data.description}
+              date={post.data.date}
+              tags={post.data.tags}
+              href={`/${category}/${post.id}/`}
+            />
+          );
+        })}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
