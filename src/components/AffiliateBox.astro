@@ -39,6 +39,27 @@ const organicFertilizer: Link = {
   img: 'https://www15.a8.net/0.gif?a8mat=4AZQGO+E6TZCY+5TR4+5YRHE',
 };
 
+// PREMIER GARDEN
+const premierGarden: Link = {
+  href: 'https://px.a8.net/svt/ejp?a8mat=4AZQGP+85IRK2+28UK+61JSI',
+  text: '喜ばれる贈り物【PREMIER GARDEN】',
+  img: 'https://www19.a8.net/0.gif?a8mat=4AZQGP+85IRK2+28UK+61JSI',
+};
+
+// HitoHana お花の定期便
+const hitoHana: Link = {
+  href: 'https://px.a8.net/svt/ejp?a8mat=4AZQGO+EDDR0I+3GBU+NTJWY',
+  text: 'HitoHana お花の定期便',
+  img: 'https://www13.a8.net/0.gif?a8mat=4AZQGO+EDDR0I+3GBU+NTJWY',
+};
+
+// タスハナ
+const tasHana: Link = {
+  href: 'https://px.a8.net/svt/ejp?a8mat=4AZQGO+E97PS2+4XOY+5YJRM',
+  text: '【花の定期便(タスハナ)】',
+  img: 'https://www13.a8.net/0.gif?a8mat=4AZQGO+E97PS2+4XOY+5YJRM',
+};
+
 // タイプ別リンクマップ
 const linksMap: Record<string, Link[]> = {
   'houseplant': [andPlants],
@@ -46,6 +67,7 @@ const linksMap: Record<string, Link[]> = {
   'succulent': [andPlants],
   'succulent-prima': [andPlants, primaOnline],
   'gardening-flowers': [flowerSubscription],
+  'gardening-flowers-full': [flowerSubscription, premierGarden, hitoHana, tasHana],
   'gardening-soil': [organicFertilizer],
   'gardening-general': [andPlants],
 };

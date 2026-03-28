@@ -17,12 +17,13 @@ const relatedPosts = shuffled.slice(0, 3).map((p) => ({
 }));
 
 // 記事別アフィリエイトタイプ
-const flowerArticles = ['summer-flowers-guide', 'winter-flowers-guide', 'autumn-flowers-guide', 'planter-gardening-guide'];
+const flowerFullArticles = ['summer-flowers-guide', 'winter-flowers-guide', 'autumn-flowers-guide'];
+const flowerArticles = ['planter-gardening-guide'];
 const soilArticles = ['gardening-soil-guide', 'gardening-fertilizer-guide', 'organic-fertilizer-guide', 'soil-making-basics'];
-const generalArticles = ['gardening-beginners-guide', 'gardening-pest-control', 'easy-vegetables-guide'];
 
 let affiliateType = 'gardening-general';
-if (flowerArticles.includes(post.id)) affiliateType = 'gardening-flowers';
+if (flowerFullArticles.includes(post.id)) affiliateType = 'gardening-flowers-full';
+else if (flowerArticles.includes(post.id)) affiliateType = 'gardening-flowers';
 else if (soilArticles.includes(post.id)) affiliateType = 'gardening-soil';
 ---
 
