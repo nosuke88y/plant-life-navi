@@ -92,11 +92,6 @@ tags: ["プランター", "ベランダガーデニング", "初心者"]
 
 プランターガーデニングは、小さなスペースから始められる手軽さが魅力です。まずは好きな花やハーブを1つ育てることから始めてみましょう。
 
-季節の花を定期的に楽しみたい方には、【お花の定期便 by アンドプランツ】もおすすめです。
-
-<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EAEKZM+4W8G+BWVTE" rel="nofollow">お花の定期便 by アンドプランツ</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AZQGO+EAEKZM+4W8G+BWVTE" alt="">
-
 ## 関連記事
 
 - [ガーデニング初心者ガイド](/gardening/gardening-beginners-guide/)

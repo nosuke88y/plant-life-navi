@@ -62,11 +62,6 @@ tags: ["多肉植物", "水やり", "育て方"]
 
 水やりのコツは「迷ったらあげない」です。多肉植物は水が足りない状態には比較的強いですが、水が多すぎる状態には非常に弱い植物です。まずは少なめから始めて、植物の様子を観察しながら自分なりのリズムを見つけていきましょう。
 
-多肉植物をまとめて探したい方は、品揃え豊富な【AND PLANTS】をチェックしてみてください。
-
-<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" rel="nofollow">パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】</a>
-<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" alt="">
-
 ## 関連記事
 
 - [多肉植物を室内で育てたい初心者へ｜失敗しない育て方のコツ](/succulent/succulent-indoor-beginners/)

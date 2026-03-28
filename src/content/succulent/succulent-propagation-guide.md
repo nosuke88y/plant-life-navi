@@ -76,11 +76,6 @@ tags: ["多肉植物", "葉挿し", "増やし方"]
 
 株分けは最初から根が付いているため、3つの方法のなかで最も成功率が高い方法です。ハオルチアやセンペルビウムなど、子株を出しやすい品種で特に有効です。
 
-多肉植物をまとめて探したい方は、品揃え豊富な【AND PLANTS】をチェックしてみてください。
-
-<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" rel="nofollow">パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】</a>
-<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" alt="">
-
 ## おすすめの道具とまとめ
 
 ### あると便利な道具

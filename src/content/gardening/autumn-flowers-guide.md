@@ -81,11 +81,6 @@ tags: ["秋の花", "ガーデニング", "秋植え"]
 
 秋はガーデニングのベストシーズンのひとつです。気候が穏やかで作業もしやすく、植えた花が長く楽しめるのが魅力です。まずはパンジーやビオラなど育てやすい花から始めて、秋の庭を自分好みに彩ってみてください。
 
-季節の花を定期的に楽しみたい方には、【お花の定期便 by アンドプランツ】もおすすめです。
-
-<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EAEKZM+4W8G+BWVTE" rel="nofollow">お花の定期便 by アンドプランツ</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AZQGO+EAEKZM+4W8G+BWVTE" alt="">
-
 ## 関連記事
 
 - [夏のガーデニングにおすすめの花](/gardening/summer-flowers-guide/)

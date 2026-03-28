@@ -61,11 +61,6 @@ tags: ["100均", "観葉植物", "初心者"]
 
 100均の観葉植物は、正しいケアをすれば何年も育てられる立派な植物です。100円で始められる手軽さは、植物を育てる楽しさを知るきっかけとして最高です。ぜひ植え替えから始めて、小さな苗が大きく育つ喜びを体験してください。
 
-観葉植物選びに迷ったら、パーソナル診断で自分に合う植物が見つかる【AND PLANTS】がおすすめです。
-
-<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" rel="nofollow">パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】</a>
-<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" alt="">
-
 ## 関連記事
 
 - [初心者におすすめの室内向け観葉植物](/houseplant/houseplant-indoor-beginners/)

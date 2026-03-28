@@ -15,8 +15,10 @@ const shuffled = otherPosts.sort(() => Math.random() - 0.5);
 const relatedPosts = shuffled.slice(0, 3).map((p) => ({
   title: p.data.title, description: p.data.description, date: p.data.date, tags: p.data.tags, href: `/succulent/${p.id}/`,
 }));
+
+const affiliateType = post.id === 'succulent-dying-causes' ? 'succulent-prima' : 'succulent';
 ---
 
-<ArticleLayout title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} category="succulent" headings={headings} relatedPosts={relatedPosts}>
+<ArticleLayout title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} category="succulent" headings={headings} relatedPosts={relatedPosts} affiliateType={affiliateType}>
   <Content />
 </ArticleLayout>

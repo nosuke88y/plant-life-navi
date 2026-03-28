@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import AffiliateBox from '../components/AffiliateBox.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import ShareButtons from '../components/ShareButtons.astro';
@@ -15,9 +16,10 @@ interface Props {
   category: 'houseplant' | 'succulent' | 'gardening';
   headings?: Heading[];
   relatedPosts?: RelatedPost[];
+  affiliateType?: string;
 }
 
-const { title, description, date, tags, category, headings = [], relatedPosts = [] } = Astro.props;
+const { title, description, date, tags, category, headings = [], relatedPosts = [], affiliateType = 'houseplant' } = Astro.props;
 
 const formattedDate = date.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
 
@@ -62,6 +64,9 @@ const pageUrl = `${siteUrl}${Astro.url.pathname}`;
 
         <TableOfContents headings={headings} />
 
+        <!-- アフィリエイトボックス（目次直後） -->
+        <AffiliateBox type={affiliateType} />
+
         <!-- 記事本文 -->
         <article class="
           prose prose-gray max-w-none prose-base leading-relaxed
@@ -76,6 +81,9 @@ const pageUrl = `${siteUrl}${Astro.url.pathname}`;
         ">
           <slot />
         </article>
+
+        <!-- アフィリエイトボックス（末尾） -->
+        <AffiliateBox type={affiliateType} />
 
         <ShareButtons title={title} url={pageUrl} />
 

@@ -74,11 +74,6 @@ tags: ["観葉植物", "虫対策", "害虫駆除"]
 - 薄めた食器用洗剤（水500mlに2〜3滴）を霧吹きでスプレーする
 - 園芸用の殺虫スプレーを使用する
 
-観葉植物選びに迷ったら、パーソナル診断で自分に合う植物が見つかる【AND PLANTS】がおすすめです。
-
-<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" rel="nofollow">パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】</a>
-<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" alt="">
-
 ## おすすめの害虫対策アイテムとまとめ
 
 害虫は「駆除」よりも「予防」が大切です。日頃の管理で虫を寄せ付けない環境を作りましょう。

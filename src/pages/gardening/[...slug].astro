@@ -15,8 +15,17 @@ const shuffled = otherPosts.sort(() => Math.random() - 0.5);
 const relatedPosts = shuffled.slice(0, 3).map((p) => ({
   title: p.data.title, description: p.data.description, date: p.data.date, tags: p.data.tags, href: `/gardening/${p.id}/`,
 }));
+
+// 記事別アフィリエイトタイプ
+const flowerArticles = ['summer-flowers-guide', 'winter-flowers-guide', 'autumn-flowers-guide', 'planter-gardening-guide'];
+const soilArticles = ['gardening-soil-guide', 'gardening-fertilizer-guide', 'organic-fertilizer-guide', 'soil-making-basics'];
+const generalArticles = ['gardening-beginners-guide', 'gardening-pest-control', 'easy-vegetables-guide'];
+
+let affiliateType = 'gardening-general';
+if (flowerArticles.includes(post.id)) affiliateType = 'gardening-flowers';
+else if (soilArticles.includes(post.id)) affiliateType = 'gardening-soil';
 ---
 
-<ArticleLayout title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} category="gardening" headings={headings} relatedPosts={relatedPosts}>
+<ArticleLayout title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} category="gardening" headings={headings} relatedPosts={relatedPosts} affiliateType={affiliateType}>
   <Content />
 </ArticleLayout>

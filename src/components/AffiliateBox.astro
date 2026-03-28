@@ -1,0 +1,97 @@
+---
+interface Link {
+  href: string;
+  text: string;
+  img: string;
+}
+
+interface Props {
+  type: string;
+}
+
+const { type } = Astro.props;
+
+// AND PLANTS（観葉植物・多肉植物メイン）
+const andPlants: Link = {
+  href: 'https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM',
+  text: 'パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】',
+  img: 'https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM',
+};
+
+// お花の定期便 by アンドプランツ
+const flowerSubscription: Link = {
+  href: 'https://px.a8.net/svt/ejp?a8mat=4AZQGO+EAEKZM+4W8G+BWVTE',
+  text: 'お花の定期便 by アンドプランツ',
+  img: 'https://www19.a8.net/0.gif?a8mat=4AZQGO+EAEKZM+4W8G+BWVTE',
+};
+
+// プリマオンライン（造花・フェイクグリーン）
+const primaOnline: Link = {
+  href: 'https://px.a8.net/svt/ejp?a8mat=4AZQGO+EGCX1E+4UD8+61RIA',
+  text: '造花・フェイクグリーン専門店プリマオンライン',
+  img: 'https://www16.a8.net/0.gif?a8mat=4AZQGO+EGCX1E+4UD8+61RIA',
+};
+
+// 生きてる肥料（有機液体肥料）
+const organicFertilizer: Link = {
+  href: 'https://px.a8.net/svt/ejp?a8mat=4AZQGO+E6TZCY+5TR4+5YRHE',
+  text: 'はじめてのオーガニック肥料に最適【生きてる肥料】',
+  img: 'https://www15.a8.net/0.gif?a8mat=4AZQGO+E6TZCY+5TR4+5YRHE',
+};
+
+// タイプ別リンクマップ
+const linksMap: Record<string, Link[]> = {
+  'houseplant': [andPlants],
+  'houseplant-prima': [andPlants, primaOnline],
+  'succulent': [andPlants],
+  'succulent-prima': [andPlants, primaOnline],
+  'gardening-flowers': [flowerSubscription],
+  'gardening-soil': [organicFertilizer],
+  'gardening-general': [andPlants],
+};
+
+const links = linksMap[type] || [andPlants];
+---
+
+<div class="affiliate-box">
+  <p class="affiliate-title">🌿 おすすめ商品</p>
+  {links.map(link => (
+    <div class="affiliate-item">
+      <a href={link.href} rel="nofollow">{link.text}</a>
+      <img border="0" width="1" height="1" src={link.img} alt="" />
+    </div>
+  ))}
+</div>
+
+<style>
+  .affiliate-box {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin: 16px 0;
+    border-radius: 6px;
+  }
+  .affiliate-title {
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    padding: 0;
+  }
+  .affiliate-item {
+    margin: 0;
+    padding: 6px 0;
+    line-height: 1.5;
+    border-top: 1px solid #e5e5e5;
+  }
+  .affiliate-item:first-of-type {
+    border-top: none;
+  }
+  .affiliate-item a {
+    color: #059669;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.15s;
+  }
+  .affiliate-item a:hover {
+    color: #047857;
+  }
+</style>

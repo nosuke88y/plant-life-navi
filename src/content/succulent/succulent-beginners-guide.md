@@ -59,11 +59,6 @@ tags: ["多肉植物", "育て方", "水やり", "初心者", "管理"]
 - 湿度が高いバスルーム付近
 - 冬に5℃以下になる場所
 
-多肉植物をまとめて探したい方は、品揃え豊富な【AND PLANTS】をチェックしてみてください。
-
-<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" rel="nofollow">パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】</a>
-<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" alt="">
-
 ## まとめ
 
 多肉植物は「水やりは控えめ」「水はけの良い土」「日当たりの良い場所」の3つを守れば、初心者でも元気に育てられます。まずは丈夫なエケベリアやセダムから始めてみましょう。
