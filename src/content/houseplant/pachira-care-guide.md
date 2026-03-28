@@ -75,6 +75,11 @@ tags: ["パキラ", "育て方", "観葉植物"]
 
 パキラは放っておくと上に伸びすぎてバランスが悪くなります。春〜夏の成長期に思い切って剪定すると、切った場所から新芽が出て、こんもりとした美しい樹形になります。
 
+観葉植物選びに迷ったら、パーソナル診断で自分に合う植物が見つかる【AND PLANTS】がおすすめです。
+
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" rel="nofollow">パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】</a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" alt="">
+
 ## おすすめアイテムとまとめ
 
 パキラを元気に育てるために役立つアイテムを紹介します。

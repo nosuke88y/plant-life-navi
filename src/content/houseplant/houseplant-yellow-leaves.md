@@ -57,6 +57,11 @@ tags: ["観葉植物", "葉が黄色い", "トラブル対処"]
 
 葉が黄色くなっても慌てる必要はありません。原因を一つずつ確認して対処すれば、多くの場合は元気を取り戻せます。日頃の観察を習慣にして、変化に早く気づけるようにしましょう。
 
+観葉植物選びに迷ったら、パーソナル診断で自分に合う植物が見つかる【AND PLANTS】がおすすめです。
+
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" rel="nofollow">パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】</a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" alt="">
+
 ## 関連記事
 
 - [観葉植物の葉が茶色くなる原因と対処法](/houseplant/houseplant-brown-leaves/)

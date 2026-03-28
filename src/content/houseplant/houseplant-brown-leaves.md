@@ -57,6 +57,11 @@ tags: ["観葉植物", "葉が茶色い", "トラブル対処"]
 
 葉が茶色くなる症状は、場所やパターンによって原因が異なります。まずは症状をよく観察して原因を特定し、それに合った対処を行いましょう。早めに気づいて対処すれば、植物は新しい健康な葉を出して回復してくれます。
 
+観葉植物選びに迷ったら、パーソナル診断で自分に合う植物が見つかる【AND PLANTS】がおすすめです。
+
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" rel="nofollow">パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】</a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" alt="">
+
 ## 関連記事
 
 - [観葉植物の葉が黄色くなる原因と対処法](/houseplant/houseplant-yellow-leaves/)

@@ -63,6 +63,11 @@ tags: ["観葉植物", "室内", "初心者"]
 
 閉め切った部屋では空気がよどみ、カビや病害虫が発生しやすくなります。1日に数回は窓を開けて換気するか、サーキュレーターでやさしく空気を循環させましょう。
 
+観葉植物選びに迷ったら、パーソナル診断で自分に合う植物が見つかる【AND PLANTS】がおすすめです。
+
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" rel="nofollow">パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】</a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" alt="">
+
 ## 初心者におすすめの観葉植物とまとめ
 
 最後に、室内栽培の初心者でも育てやすい品種を紹介します。

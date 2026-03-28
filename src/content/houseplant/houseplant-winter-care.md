@@ -53,6 +53,11 @@ tags: ["観葉植物", "冬越し", "寒さ対策"]
 
 冬の管理で最も大切なのは「温度」「水やり控えめ」「日光確保」の3つです。植物は冬の間じっと耐えて、春になれば再び元気に成長を始めます。冬越しを乗り越えた植物には愛着もひとしおです。ぜひ今年の冬は大切な植物を守り抜きましょう。
 
+観葉植物選びに迷ったら、パーソナル診断で自分に合う植物が見つかる【AND PLANTS】がおすすめです。
+
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" rel="nofollow">パーソナル診断で自分に合う観葉植物が見つかるオンラインストア【AND PLANTS】</a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZQGO+EB00LE+4W8G+5YJRM" alt="">
+
 ## 関連記事
 
 - [観葉植物の正しい水やり方法](/houseplant/houseplant-watering-guide/)

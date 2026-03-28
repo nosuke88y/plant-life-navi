@@ -77,6 +77,11 @@ tags: ["冬の花", "ガーデニング", "耐寒性"]
 
 冬だからとガーデニングをあきらめる必要はありません。耐寒性の強い花を選び、防寒対策をしっかり行えば、寒い季節でも庭やベランダを美しく彩ることができます。まずはパンジーやビオラなど、丈夫で育てやすい花から始めてみましょう。
 
+季節の花を定期的に楽しみたい方には、【お花の定期便 by アンドプランツ】もおすすめです。
+
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZQGO+EAEKZM+4W8G+BWVTE" rel="nofollow">お花の定期便 by アンドプランツ</a>
+<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AZQGO+EAEKZM+4W8G+BWVTE" alt="">
+
 ## 関連記事
 
 - [ガーデニング初心者の始め方](/gardening/gardening-beginners-guide/)
