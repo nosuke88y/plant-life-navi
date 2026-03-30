@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "www.plant-life-navi.com" }],
+      "destination": "https://plant-life-navi.com/:path",
+      "permanent": true
+    }
+  ]
+}
