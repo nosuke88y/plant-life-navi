@@ -44,9 +44,31 @@ const categories = [
     gradient: 'from-[#00897B] to-[#26A69A]',
   },
 ];
+
+const siteUrl = 'https://plant-life-navi.com';
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Plant Life Navi',
+  alternateName: 'プラントライフナビ',
+  url: `${siteUrl}/`,
+  inLanguage: 'ja',
+};
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Plant Life Navi',
+  url: `${siteUrl}/`,
+  logo: `${siteUrl}/favicon.ico`,
+  sameAs: ['https://x.com/plant_navi_jp'],
+};
+
+const jsonLd = [websiteSchema, organizationSchema];
 ---
 
-<BaseLayout title="Plant Life Navi">
+<BaseLayout title="Plant Life Navi" jsonLd={jsonLd}>
   <section class="bg-gradient-to-br from-emerald-600 to-teal-700 text-white">
     <div class="max-w-4xl mx-auto px-4 py-16 text-center">
       <p class="text-emerald-200 text-sm font-medium mb-3 tracking-widest uppercase">植物情報メディア</p>
