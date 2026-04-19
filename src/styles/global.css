@@ -20,9 +20,23 @@
   /* フォント */
   --font-sans: "Noto Sans JP", ui-sans-serif, "Hiragino Kaku Gothic ProN",
                "Yu Gothic", Meiryo, system-ui, sans-serif;
+  --font-serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho",
+                "YuMincho", serif;
+
+  /* 角丸: やわらかさを残しつつ控えめに（rounded-sm程度に統一） */
+  --radius-md:  0.125rem;
+  --radius-lg:  0.125rem;
+  --radius-xl:  0.125rem;
+  --radius-2xl: 0.25rem;
+  --radius-3xl: 0.25rem;
 }
 
 html {
   font-family: var(--font-sans);
   color: var(--color-ink);
+}
+
+/* h1と.prose内の見出しはserif（やわらかく・癒し路線） */
+h1 {
+  font-family: var(--font-serif);
 }
