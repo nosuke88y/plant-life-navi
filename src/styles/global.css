@@ -2,12 +2,12 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  /* アクセントカラー: 深いフォレストグリーン（植物系） */
-  --color-accent-50:  oklch(0.96 0.02 150);
-  --color-accent-100: oklch(0.90 0.05 150);
-  --color-accent-600: oklch(0.45 0.09 150);
-  --color-accent-700: oklch(0.38 0.10 150);
-  --color-accent-800: oklch(0.32 0.09 150);
+  /* アクセントカラー: テラコッタ/アンバー（土・自然の温かみ） */
+  --color-accent-50:  oklch(0.96 0.03 45);
+  --color-accent-100: oklch(0.90 0.06 45);
+  --color-accent-600: oklch(0.55 0.15 45);
+  --color-accent-700: oklch(0.47 0.15 45);
+  --color-accent-800: oklch(0.40 0.13 45);
 
   /* インク（テキスト） */
   --color-ink:      oklch(0.22 0 0);
