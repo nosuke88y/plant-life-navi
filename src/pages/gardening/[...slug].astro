@@ -1,6 +1,7 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { extractFaq } from '../../utils/extractFaq';
 
 export async function getStaticPaths() {
   const posts = await getCollection('gardening');
@@ -25,8 +26,10 @@ let affiliateType = 'gardening-general';
 if (flowerFullArticles.includes(post.id)) affiliateType = 'gardening-flowers-full';
 else if (flowerArticles.includes(post.id)) affiliateType = 'gardening-flowers';
 else if (soilArticles.includes(post.id)) affiliateType = 'gardening-soil';
+
+const faqItems = extractFaq(post.body ?? '');
 ---
 
-<ArticleLayout title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} category="gardening" headings={headings} relatedPosts={relatedPosts} affiliateType={affiliateType}>
+<ArticleLayout title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} category="gardening" headings={headings} relatedPosts={relatedPosts} affiliateType={affiliateType} faqItems={faqItems}>
   <Content />
 </ArticleLayout>

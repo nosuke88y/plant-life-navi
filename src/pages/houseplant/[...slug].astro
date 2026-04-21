@@ -1,6 +1,7 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { extractFaq } from '../../utils/extractFaq';
 
 export async function getStaticPaths() {
   const posts = await getCollection('houseplant');
@@ -28,8 +29,10 @@ const primaArticles = [
   'houseplant-winter-care',
 ];
 const affiliateType = primaArticles.includes(post.id) ? 'houseplant-prima' : 'houseplant';
+
+const faqItems = extractFaq(post.body ?? '');
 ---
 
-<ArticleLayout title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} category="houseplant" headings={headings} relatedPosts={relatedPosts} affiliateType={affiliateType}>
+<ArticleLayout title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} category="houseplant" headings={headings} relatedPosts={relatedPosts} affiliateType={affiliateType} faqItems={faqItems}>
   <Content />
 </ArticleLayout>

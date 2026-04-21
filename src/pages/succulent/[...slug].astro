@@ -1,6 +1,7 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { extractFaq } from '../../utils/extractFaq';
 
 export async function getStaticPaths() {
   const posts = await getCollection('succulent');
@@ -17,8 +18,10 @@ const relatedPosts = shuffled.slice(0, 3).map((p) => ({
 }));
 
 const affiliateType = post.id === 'succulent-dying-causes' ? 'succulent-prima' : 'succulent';
+
+const faqItems = extractFaq(post.body ?? '');
 ---
 
-<ArticleLayout title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} category="succulent" headings={headings} relatedPosts={relatedPosts} affiliateType={affiliateType}>
+<ArticleLayout title={post.data.title} description={post.data.description} date={post.data.date} tags={post.data.tags} category="succulent" headings={headings} relatedPosts={relatedPosts} affiliateType={affiliateType} faqItems={faqItems}>
   <Content />
 </ArticleLayout>

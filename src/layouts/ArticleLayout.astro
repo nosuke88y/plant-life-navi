@@ -7,6 +7,7 @@ import ShareButtons from '../components/ShareButtons.astro';
 
 interface Heading { depth: number; slug: string; text: string; }
 interface RelatedPost { title: string; description: string; date: Date; tags: string[]; href: string; }
+interface FaqItem { q: string; a: string; }
 
 interface Props {
   title: string;
@@ -17,9 +18,10 @@ interface Props {
   headings?: Heading[];
   relatedPosts?: RelatedPost[];
   affiliateType?: string;
+  faqItems?: FaqItem[];
 }
 
-const { title, description, date, tags, category, headings = [], relatedPosts = [], affiliateType = 'houseplant' } = Astro.props;
+const { title, description, date, tags, category, headings = [], relatedPosts = [], affiliateType = 'houseplant', faqItems = [] } = Astro.props;
 
 const formattedDate = date.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
 
@@ -80,7 +82,20 @@ const breadcrumbSchema = {
   ],
 };
 
-const jsonLd = [blogPostingSchema, breadcrumbSchema];
+const jsonLd: object[] = [blogPostingSchema, breadcrumbSchema];
+
+// FAQPage スキーマ（Q&A が抽出できた記事のみ出力）
+if (faqItems.length > 0) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  });
+}
 ---
 
 <BaseLayout title={title} description={description} jsonLd={jsonLd}>
