@@ -6,6 +6,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://plant-life-navi.com',
   trailingSlash: 'always',
+  build: {
+    inlineStylesheets: 'always',
+  },
   prefetch: {
     defaultStrategy: 'hover',
     prefetchAll: false,
